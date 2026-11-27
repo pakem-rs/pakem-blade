@@ -1,7 +1,7 @@
 # 🗡️ Pakem Blade Engine (`pakem-blade`)
 
 > **"Look like Laravel, Run at Rust Speed."**  
-> Pure, blazingly fast, and standalone Laravel Blade templating engine written natively in Rust.
+> Pure, blazingly fast, and standalone Pakem Blade templating engine written natively in Rust.
 
 [![Crates.io](https://img.shields.io/crates/v/pakem-blade.svg)](https://crates.io/crates/pakem-blade)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -44,7 +44,7 @@ use pakem_blade::{BladeEngine, BladeContext};
 
 fn main() {
     let mut engine = BladeEngine::new();
-    
+
     // Simpan template ke memory (atau letakkan di folder resources/views/**/*.blade.rs)
     engine.register_template("greeting", "<h1>Halo, {{ $nama }}!</h1>");
 
